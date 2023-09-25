@@ -1,0 +1,249 @@
+2023-09-26 01:24:35,700 | Address Debugger | DEBUG | **********
+2023-09-26 01:24:35,701 | Address Debugger | DEBUG | How can I help you?
+2023-09-26 01:24:35,701 | Address Debugger | DEBUG | **********
+2023-09-26 01:24:35,702 | Address Debugger | DEBUG | Available commands:
+2023-09-26 01:24:35,702 | Address Debugger | DEBUG | not save - Close adress book without saving
+2023-09-26 01:24:35,703 | Address Debugger | DEBUG | good bye - Save changes and close address book
+2023-09-26 01:24:35,703 | Address Debugger | DEBUG | close - Save changes and close address book
+2023-09-26 01:24:35,704 | Address Debugger | DEBUG | hello - Hear some greeting from me
+2023-09-26 01:24:35,705 | Address Debugger | DEBUG | add - Add a new record
+2023-09-26 01:24:35,705 | Address Debugger | DEBUG | add phone - Add new phone to the existing record
+2023-09-26 01:24:35,706 | Address Debugger | DEBUG | edit phone - Edit a phone of the existing record
+2023-09-26 01:24:35,706 | Address Debugger | DEBUG | show all - Show all the records
+2023-09-26 01:24:35,707 | Address Debugger | DEBUG | show some - Show some number of the records at a time
+2023-09-26 01:24:35,707 | Address Debugger | DEBUG | delete phone - Delete the phone of the existing record
+2023-09-26 01:24:35,707 | Address Debugger | DEBUG | delete contact - Delete record completely
+2023-09-26 01:24:35,708 | Address Debugger | DEBUG | set bday - Set a BDay for the existing record
+2023-09-26 01:24:35,708 | Address Debugger | DEBUG | set email - Set an email for the existing record
+2023-09-26 01:24:35,709 | Address Debugger | DEBUG | set address - Set an adress for the existing record
+2023-09-26 01:24:35,709 | Address Debugger | DEBUG | show bday - Show a BDay for the existing record
+2023-09-26 01:24:35,710 | Address Debugger | DEBUG | show email - Show an email for the existing record
+2023-09-26 01:24:35,710 | Address Debugger | DEBUG | show address - Show an address for the existing record
+2023-09-26 01:24:35,712 | Address Debugger | DEBUG | find - Find record that contains ...
+2023-09-26 01:24:35,712 | Address Debugger | DEBUG | help - Show full list of available commands
+2023-09-26 01:24:35,712 | Address Debugger | DEBUG | bday in - Show records that have BDay in set timeframe of days
+2023-09-26 01:24:35,713 | Address Debugger | DEBUG | **********
+2023-09-26 01:24:46,832 | Address Debugger | DEBUG | Your list is empty!
+2023-09-26 01:24:46,833 | Address Debugger | DEBUG | **********
+2023-09-26 01:25:25,044 | Address Debugger | DEBUG | **********
+2023-09-26 01:25:25,044 | Address Debugger | DEBUG | How can I help you?
+2023-09-26 01:25:25,045 | Address Debugger | DEBUG | **********
+2023-09-26 01:25:25,045 | Address Debugger | DEBUG | Available commands:
+2023-09-26 01:25:25,046 | Address Debugger | DEBUG | not save - Close adress book without saving
+2023-09-26 01:25:25,046 | Address Debugger | DEBUG | good bye - Save changes and close address book
+2023-09-26 01:25:25,047 | Address Debugger | DEBUG | close - Save changes and close address book
+2023-09-26 01:25:25,047 | Address Debugger | DEBUG | hello - Hear some greeting from me
+2023-09-26 01:25:25,048 | Address Debugger | DEBUG | add - Add a new record
+2023-09-26 01:25:25,049 | Address Debugger | DEBUG | add phone - Add new phone to the existing record
+2023-09-26 01:25:25,049 | Address Debugger | DEBUG | edit phone - Edit a phone of the existing record
+2023-09-26 01:25:25,050 | Address Debugger | DEBUG | show all - Show all the records
+2023-09-26 01:25:25,050 | Address Debugger | DEBUG | show some - Show some number of the records at a time
+2023-09-26 01:25:25,051 | Address Debugger | DEBUG | delete phone - Delete the phone of the existing record
+2023-09-26 01:25:25,051 | Address Debugger | DEBUG | delete contact - Delete record completely
+2023-09-26 01:25:25,052 | Address Debugger | DEBUG | set bday - Set a BDay for the existing record
+2023-09-26 01:25:25,052 | Address Debugger | DEBUG | set email - Set an email for the existing record
+2023-09-26 01:25:25,053 | Address Debugger | DEBUG | set address - Set an adress for the existing record
+2023-09-26 01:25:25,053 | Address Debugger | DEBUG | show bday - Show a BDay for the existing record
+2023-09-26 01:25:25,054 | Address Debugger | DEBUG | show email - Show an email for the existing record
+2023-09-26 01:25:25,058 | Address Debugger | DEBUG | show address - Show an address for the existing record
+2023-09-26 01:25:25,058 | Address Debugger | DEBUG | find - Find record that contains ...
+2023-09-26 01:25:25,059 | Address Debugger | DEBUG | help - Show full list of available commands
+2023-09-26 01:25:25,059 | Address Debugger | DEBUG | bday in - Show records that have BDay in set timeframe of days
+2023-09-26 01:25:25,059 | Address Debugger | DEBUG | **********
+2023-09-26 01:25:27,382 | Address Debugger | DEBUG | Your list is empty!
+2023-09-26 01:25:27,383 | Address Debugger | DEBUG | **********
+2023-09-26 01:25:36,912 | Address Debugger | DEBUG | 11 August 2020 BDay record was added for Vix!
+2023-09-26 01:25:36,913 | Address Debugger | DEBUG | 12 July 2019 BDay record was added for Dima!
+2023-09-26 01:25:36,914 | Address Debugger | DEBUG | 15 July 2020 BDay record was added for Donny!
+2023-09-26 01:25:36,914 | Address Debugger | DEBUG | 30 July 2020 BDay record was added for SamSmith!
+2023-09-26 01:25:36,917 | Address Debugger | DEBUG | 11 August 2020 BDay record was added for Lambert!
+2023-09-26 01:25:36,917 | Address Debugger | DEBUG | 19 December 2019 BDay record was added for Petro!
+2023-09-26 01:25:36,917 | Address Debugger | DEBUG | 01 October 1990 BDay record was added for Crafter!
+2023-09-26 01:25:36,918 | Address Debugger | DEBUG | +380990000090 record was successfully added for Rosa
+2023-09-26 01:25:36,918 | Address Debugger | DEBUG | **********
+2023-09-26 01:25:36,918 | Address Debugger | DEBUG | How can I help you?
+2023-09-26 01:25:36,919 | Address Debugger | DEBUG | **********
+2023-09-26 01:25:36,919 | Address Debugger | DEBUG | Available commands:
+2023-09-26 01:25:36,919 | Address Debugger | DEBUG | not save - Close adress book without saving
+2023-09-26 01:25:36,919 | Address Debugger | DEBUG | good bye - Save changes and close address book
+2023-09-26 01:25:36,919 | Address Debugger | DEBUG | close - Save changes and close address book
+2023-09-26 01:25:36,919 | Address Debugger | DEBUG | hello - Hear some greeting from me
+2023-09-26 01:25:36,920 | Address Debugger | DEBUG | add - Add a new record
+2023-09-26 01:25:36,920 | Address Debugger | DEBUG | add phone - Add new phone to the existing record
+2023-09-26 01:25:36,920 | Address Debugger | DEBUG | edit phone - Edit a phone of the existing record
+2023-09-26 01:25:36,920 | Address Debugger | DEBUG | show all - Show all the records
+2023-09-26 01:25:36,921 | Address Debugger | DEBUG | show some - Show some number of the records at a time
+2023-09-26 01:25:36,921 | Address Debugger | DEBUG | delete phone - Delete the phone of the existing record
+2023-09-26 01:25:36,921 | Address Debugger | DEBUG | delete contact - Delete record completely
+2023-09-26 01:25:36,921 | Address Debugger | DEBUG | set bday - Set a BDay for the existing record
+2023-09-26 01:25:36,922 | Address Debugger | DEBUG | set email - Set an email for the existing record
+2023-09-26 01:25:36,923 | Address Debugger | DEBUG | set address - Set an adress for the existing record
+2023-09-26 01:25:36,923 | Address Debugger | DEBUG | show bday - Show a BDay for the existing record
+2023-09-26 01:25:36,923 | Address Debugger | DEBUG | show email - Show an email for the existing record
+2023-09-26 01:25:36,924 | Address Debugger | DEBUG | show address - Show an address for the existing record
+2023-09-26 01:25:36,924 | Address Debugger | DEBUG | find - Find record that contains ...
+2023-09-26 01:25:36,924 | Address Debugger | DEBUG | help - Show full list of available commands
+2023-09-26 01:25:36,924 | Address Debugger | DEBUG | bday in - Show records that have BDay in set timeframe of days
+2023-09-26 01:25:36,925 | Address Debugger | DEBUG | **********
+2023-09-26 01:25:38,970 | Address Debugger | DEBUG | Phones for Vix (email = "bill@bill.com", address = "Nezalozhnosti, 100", BDay = "11 August 2020"):
+2023-09-26 01:25:38,972 | Address Debugger | DEBUG | 1) - +380998889977
+2023-09-26 01:25:38,972 | Address Debugger | DEBUG | Phones for Dima (email = "Bob@bob.com", address = "Nezalozhnosti, 130", BDay = "12 July 2019"):
+2023-09-26 01:25:38,973 | Address Debugger | DEBUG | 1) - +380634520821
+2023-09-26 01:25:38,973 | Address Debugger | DEBUG | Phones for Donny (email = "Donny@Donny.com", address = "Nezalozhnosti, 120", BDay = "15 July 2020"):
+2023-09-26 01:25:38,973 | Address Debugger | DEBUG | 1) - +380634520822
+2023-09-26 01:25:38,974 | Address Debugger | DEBUG | Phones for SamSmith (email = "Donny@Donny.com", address = "Nezalozhnosti, 110", BDay = "30 July 2020"):
+2023-09-26 01:25:38,974 | Address Debugger | DEBUG | 1) - +380634520823
+2023-09-26 01:25:38,974 | Address Debugger | DEBUG | Phones for Lambert (email = "bill@bill.com", address = "Nezalozhnosti, 101", BDay = "11 August 2020"):
+2023-09-26 01:25:38,975 | Address Debugger | DEBUG | 1) - +380998889977
+2023-09-26 01:25:38,975 | Address Debugger | DEBUG | Phones for Petro (email = "Petro@bob.com", address = "", BDay = "19 December 2019"):
+2023-09-26 01:25:38,980 | Address Debugger | DEBUG | 1) - +380634520821
+2023-09-26 01:25:38,981 | Address Debugger | DEBUG | Phones for Crafter (email = "craftbeer@Donny.com", address = "Nezalozhnosti, 125", BDay = "01 October 1990"):
+2023-09-26 01:25:38,982 | Address Debugger | DEBUG | 1) - +380634520153
+2023-09-26 01:25:38,982 | Address Debugger | DEBUG | Phones for Bober (email = "", address = "Nezalozhnosti, 12", BDay = ""):
+2023-09-26 01:25:38,982 | Address Debugger | DEBUG | 1) - +380634520823
+2023-09-26 01:25:38,983 | Address Debugger | DEBUG | Phones for Rosa (email = "", address = "", BDay = ""):
+2023-09-26 01:25:38,983 | Address Debugger | DEBUG | 1) - +380995556644
+2023-09-26 01:25:38,983 | Address Debugger | DEBUG | 2) - +380990000090
+2023-09-26 01:25:38,987 | Address Debugger | DEBUG | Phones for Garmata (email = "", address = "", BDay = ""):
+2023-09-26 01:25:38,987 | Address Debugger | DEBUG | 1) - +380559993344
+2023-09-26 01:25:38,988 | Address Debugger | DEBUG | **********
+2023-09-26 01:25:43,807 | Address Debugger | DEBUG | **********
+2023-09-26 01:25:48,923 | Address Debugger | DEBUG | **********
+2023-09-26 01:25:52,328 | Address Debugger | DEBUG | Available commands:
+2023-09-26 01:25:52,328 | Address Debugger | DEBUG | not save - Close adress book without saving
+2023-09-26 01:25:52,329 | Address Debugger | DEBUG | good bye - Save changes and close address book
+2023-09-26 01:25:52,329 | Address Debugger | DEBUG | close - Save changes and close address book
+2023-09-26 01:25:52,329 | Address Debugger | DEBUG | hello - Hear some greeting from me
+2023-09-26 01:25:52,330 | Address Debugger | DEBUG | add - Add a new record
+2023-09-26 01:25:52,330 | Address Debugger | DEBUG | add phone - Add new phone to the existing record
+2023-09-26 01:25:52,330 | Address Debugger | DEBUG | edit phone - Edit a phone of the existing record
+2023-09-26 01:25:52,331 | Address Debugger | DEBUG | show all - Show all the records
+2023-09-26 01:25:52,331 | Address Debugger | DEBUG | show some - Show some number of the records at a time
+2023-09-26 01:25:52,331 | Address Debugger | DEBUG | delete phone - Delete the phone of the existing record
+2023-09-26 01:25:52,331 | Address Debugger | DEBUG | delete contact - Delete record completely
+2023-09-26 01:25:52,332 | Address Debugger | DEBUG | set bday - Set a BDay for the existing record
+2023-09-26 01:25:52,332 | Address Debugger | DEBUG | set email - Set an email for the existing record
+2023-09-26 01:25:52,332 | Address Debugger | DEBUG | set address - Set an adress for the existing record
+2023-09-26 01:25:52,333 | Address Debugger | DEBUG | show bday - Show a BDay for the existing record
+2023-09-26 01:25:52,333 | Address Debugger | DEBUG | show email - Show an email for the existing record
+2023-09-26 01:25:52,333 | Address Debugger | DEBUG | show address - Show an address for the existing record
+2023-09-26 01:25:52,333 | Address Debugger | DEBUG | find - Find record that contains ...
+2023-09-26 01:25:52,334 | Address Debugger | DEBUG | help - Show full list of available commands
+2023-09-26 01:25:52,334 | Address Debugger | DEBUG | bday in - Show records that have BDay in set timeframe of days
+2023-09-26 01:25:52,334 | Address Debugger | DEBUG | **********
+2023-09-26 01:25:58,797 | Address Debugger | DEBUG | Removed record for Garmata, my lord.
+2023-09-26 01:25:58,798 | Address Debugger | DEBUG | **********
+2023-09-26 01:26:01,783 | Address Debugger | DEBUG | Phones for Vix (email = "bill@bill.com", address = "Nezalozhnosti, 100", BDay = "11 August 2020"):
+2023-09-26 01:26:01,784 | Address Debugger | DEBUG | 1) - +380998889977
+2023-09-26 01:26:01,785 | Address Debugger | DEBUG | Phones for Dima (email = "Bob@bob.com", address = "Nezalozhnosti, 130", BDay = "12 July 2019"):
+2023-09-26 01:26:01,785 | Address Debugger | DEBUG | 1) - +380634520821
+2023-09-26 01:26:01,785 | Address Debugger | DEBUG | Phones for Donny (email = "Donny@Donny.com", address = "Nezalozhnosti, 120", BDay = "15 July 2020"):
+2023-09-26 01:26:01,785 | Address Debugger | DEBUG | 1) - +380634520822
+2023-09-26 01:26:01,786 | Address Debugger | DEBUG | Phones for SamSmith (email = "Donny@Donny.com", address = "Nezalozhnosti, 110", BDay = "30 July 2020"):
+2023-09-26 01:26:01,786 | Address Debugger | DEBUG | 1) - +380634520823
+2023-09-26 01:26:01,786 | Address Debugger | DEBUG | Phones for Lambert (email = "bill@bill.com", address = "Nezalozhnosti, 101", BDay = "11 August 2020"):
+2023-09-26 01:26:01,787 | Address Debugger | DEBUG | 1) - +380998889977
+2023-09-26 01:26:01,787 | Address Debugger | DEBUG | Phones for Petro (email = "Petro@bob.com", address = "", BDay = "19 December 2019"):
+2023-09-26 01:26:01,788 | Address Debugger | DEBUG | 1) - +380634520821
+2023-09-26 01:26:01,792 | Address Debugger | DEBUG | Phones for Crafter (email = "craftbeer@Donny.com", address = "Nezalozhnosti, 125", BDay = "01 October 1990"):
+2023-09-26 01:26:01,793 | Address Debugger | DEBUG | 1) - +380634520153
+2023-09-26 01:26:01,793 | Address Debugger | DEBUG | Phones for Bober (email = "", address = "Nezalozhnosti, 12", BDay = ""):
+2023-09-26 01:26:01,794 | Address Debugger | DEBUG | 1) - +380634520823
+2023-09-26 01:26:01,795 | Address Debugger | DEBUG | Phones for Rosa (email = "", address = "", BDay = ""):
+2023-09-26 01:26:01,795 | Address Debugger | DEBUG | 1) - +380995556644
+2023-09-26 01:26:01,795 | Address Debugger | DEBUG | 2) - +380990000090
+2023-09-26 01:26:01,796 | Address Debugger | DEBUG | **********
+2023-09-26 01:29:27,100 | Address Debugger | DEBUG | 11 August 2020 BDay record was added for Vix!
+2023-09-26 01:29:27,101 | Address Debugger | DEBUG | 12 July 2019 BDay record was added for Dima!
+2023-09-26 01:29:27,102 | Address Debugger | DEBUG | 15 July 2020 BDay record was added for Donny!
+2023-09-26 01:29:27,103 | Address Debugger | DEBUG | 30 July 2020 BDay record was added for SamSmith!
+2023-09-26 01:29:27,103 | Address Debugger | DEBUG | 11 August 2020 BDay record was added for Lambert!
+2023-09-26 01:29:27,103 | Address Debugger | DEBUG | 19 December 2019 BDay record was added for Petro!
+2023-09-26 01:29:27,104 | Address Debugger | DEBUG | 01 October 1990 BDay record was added for Crafter!
+2023-09-26 01:29:27,104 | Address Debugger | DEBUG | +380990000090 record was successfully added for Rosa
+2023-09-26 01:29:27,105 | Address Debugger | DEBUG | **********
+2023-09-26 01:30:36,873 | Address Debugger | DEBUG | 11 August 2020 BDay record was added for Vix!
+2023-09-26 01:30:36,874 | Address Debugger | DEBUG | 12 July 2019 BDay record was added for Dima!
+2023-09-26 01:30:36,875 | Address Debugger | DEBUG | 15 July 2020 BDay record was added for Donny!
+2023-09-26 01:30:36,876 | Address Debugger | DEBUG | 30 July 2020 BDay record was added for SamSmith!
+2023-09-26 01:30:36,877 | Address Debugger | DEBUG | 11 August 2020 BDay record was added for Lambert!
+2023-09-26 01:30:36,877 | Address Debugger | DEBUG | 19 December 2019 BDay record was added for Petro!
+2023-09-26 01:30:36,878 | Address Debugger | DEBUG | 01 October 1990 BDay record was added for Crafter!
+2023-09-26 01:30:36,879 | Address Debugger | DEBUG | +380990000090 record was successfully added for Rosa
+2023-09-26 01:30:36,880 | Address Debugger | DEBUG | **********
+2023-09-26 01:31:13,962 | Address Debugger | DEBUG | 11 August 2020 BDay record was added for Vix!
+2023-09-26 01:31:13,964 | Address Debugger | DEBUG | 12 July 2019 BDay record was added for Dima!
+2023-09-26 01:31:13,964 | Address Debugger | DEBUG | 15 July 2020 BDay record was added for Donny!
+2023-09-26 01:31:13,965 | Address Debugger | DEBUG | 30 July 2020 BDay record was added for SamSmith!
+2023-09-26 01:31:13,966 | Address Debugger | DEBUG | 11 August 2020 BDay record was added for Lambert!
+2023-09-26 01:31:13,966 | Address Debugger | DEBUG | 19 December 2019 BDay record was added for Petro!
+2023-09-26 01:31:13,967 | Address Debugger | DEBUG | 01 October 1990 BDay record was added for Crafter!
+2023-09-26 01:31:13,968 | Address Debugger | DEBUG | +380990000090 record was successfully added for Rosa
+2023-09-26 01:31:13,968 | Address Debugger | DEBUG | **********
+2023-09-26 01:32:16,427 | Address Debugger | DEBUG | 11 August 2020 BDay record was added for Vix!
+2023-09-26 01:32:16,428 | Address Debugger | DEBUG | 12 July 2019 BDay record was added for Dima!
+2023-09-26 01:32:16,428 | Address Debugger | DEBUG | 15 July 2020 BDay record was added for Donny!
+2023-09-26 01:32:16,429 | Address Debugger | DEBUG | 30 July 2020 BDay record was added for SamSmith!
+2023-09-26 01:32:16,429 | Address Debugger | DEBUG | 11 August 2020 BDay record was added for Lambert!
+2023-09-26 01:32:16,430 | Address Debugger | DEBUG | 19 December 2019 BDay record was added for Petro!
+2023-09-26 01:32:16,430 | Address Debugger | DEBUG | 01 October 1990 BDay record was added for Crafter!
+2023-09-26 01:32:16,431 | Address Debugger | DEBUG | +380990000090 record was successfully added for Rosa
+2023-09-26 01:32:16,431 | Address Debugger | DEBUG | **********
+2023-09-26 01:32:16,432 | Address Debugger | DEBUG | How can I help you?
+2023-09-26 01:32:16,432 | Address Debugger | DEBUG | **********
+2023-09-26 01:32:16,432 | Address Debugger | DEBUG | Available commands:
+2023-09-26 01:32:16,432 | Address Debugger | DEBUG | not save - Close adress book without saving
+2023-09-26 01:32:16,433 | Address Debugger | DEBUG | good bye - Save changes and close address book
+2023-09-26 01:32:16,433 | Address Debugger | DEBUG | close - Save changes and close address book
+2023-09-26 01:32:16,433 | Address Debugger | DEBUG | hello - Hear some greeting from me
+2023-09-26 01:32:16,433 | Address Debugger | DEBUG | add - Add a new record
+2023-09-26 01:32:16,433 | Address Debugger | DEBUG | add phone - Add new phone to the existing record
+2023-09-26 01:32:16,434 | Address Debugger | DEBUG | edit phone - Edit a phone of the existing record
+2023-09-26 01:32:16,435 | Address Debugger | DEBUG | show all - Show all the records
+2023-09-26 01:32:16,435 | Address Debugger | DEBUG | show some - Show some number of the records at a time
+2023-09-26 01:32:16,435 | Address Debugger | DEBUG | delete phone - Delete the phone of the existing record
+2023-09-26 01:32:16,435 | Address Debugger | DEBUG | delete contact - Delete record completely
+2023-09-26 01:32:16,435 | Address Debugger | DEBUG | set bday - Set a BDay for the existing record
+2023-09-26 01:32:16,436 | Address Debugger | DEBUG | set email - Set an email for the existing record
+2023-09-26 01:32:16,436 | Address Debugger | DEBUG | set address - Set an adress for the existing record
+2023-09-26 01:32:16,436 | Address Debugger | DEBUG | show bday - Show a BDay for the existing record
+2023-09-26 01:32:16,436 | Address Debugger | DEBUG | show email - Show an email for the existing record
+2023-09-26 01:32:16,436 | Address Debugger | DEBUG | show address - Show an address for the existing record
+2023-09-26 01:32:16,436 | Address Debugger | DEBUG | find - Find record that contains ...
+2023-09-26 01:32:16,437 | Address Debugger | DEBUG | help - Show full list of available commands
+2023-09-26 01:32:16,437 | Address Debugger | DEBUG | bday in - Show records that have BDay in set timeframe of days
+2023-09-26 01:32:16,437 | Address Debugger | DEBUG | **********
+2023-09-26 01:32:24,403 | Address Debugger | DEBUG | 11 August 2020 BDay record was added for Vix!
+2023-09-26 01:32:24,403 | Address Debugger | DEBUG | 12 July 2019 BDay record was added for Dima!
+2023-09-26 01:32:24,404 | Address Debugger | DEBUG | 15 July 2020 BDay record was added for Donny!
+2023-09-26 01:32:24,404 | Address Debugger | DEBUG | 30 July 2020 BDay record was added for SamSmith!
+2023-09-26 01:32:24,404 | Address Debugger | DEBUG | 11 August 2020 BDay record was added for Lambert!
+2023-09-26 01:32:24,405 | Address Debugger | DEBUG | 19 December 2019 BDay record was added for Petro!
+2023-09-26 01:32:24,405 | Address Debugger | DEBUG | 01 October 1990 BDay record was added for Crafter!
+2023-09-26 01:32:24,406 | Address Debugger | DEBUG | +380990000090 record was successfully added for Rosa
+2023-09-26 01:32:24,406 | Address Debugger | DEBUG | **********
+2023-09-26 01:32:24,410 | Address Debugger | DEBUG | How can I help you?
+2023-09-26 01:32:24,411 | Address Debugger | DEBUG | **********
+2023-09-26 01:32:24,411 | Address Debugger | DEBUG | Available commands:
+2023-09-26 01:32:24,411 | Address Debugger | DEBUG | not save - Close adress book without saving
+2023-09-26 01:32:24,412 | Address Debugger | DEBUG | good bye - Save changes and close address book
+2023-09-26 01:32:24,412 | Address Debugger | DEBUG | close - Save changes and close address book
+2023-09-26 01:32:24,412 | Address Debugger | DEBUG | hello - Hear some greeting from me
+2023-09-26 01:32:24,412 | Address Debugger | DEBUG | add - Add a new record
+2023-09-26 01:32:24,413 | Address Debugger | DEBUG | add phone - Add new phone to the existing record
+2023-09-26 01:32:24,413 | Address Debugger | DEBUG | edit phone - Edit a phone of the existing record
+2023-09-26 01:32:24,413 | Address Debugger | DEBUG | show all - Show all the records
+2023-09-26 01:32:24,414 | Address Debugger | DEBUG | show some - Show some number of the records at a time
+2023-09-26 01:32:24,414 | Address Debugger | DEBUG | delete phone - Delete the phone of the existing record
+2023-09-26 01:32:24,414 | Address Debugger | DEBUG | delete contact - Delete record completely
+2023-09-26 01:32:24,414 | Address Debugger | DEBUG | set bday - Set a BDay for the existing record
+2023-09-26 01:32:24,415 | Address Debugger | DEBUG | set email - Set an email for the existing record
+2023-09-26 01:32:24,415 | Address Debugger | DEBUG | set address - Set an adress for the existing record
+2023-09-26 01:32:24,415 | Address Debugger | DEBUG | show bday - Show a BDay for the existing record
+2023-09-26 01:32:24,416 | Address Debugger | DEBUG | show email - Show an email for the existing record
+2023-09-26 01:32:24,416 | Address Debugger | DEBUG | show address - Show an address for the existing record
+2023-09-26 01:32:24,416 | Address Debugger | DEBUG | find - Find record that contains ...
+2023-09-26 01:32:24,417 | Address Debugger | DEBUG | help - Show full list of available commands
+2023-09-26 01:32:24,417 | Address Debugger | DEBUG | bday in - Show records that have BDay in set timeframe of days
+2023-09-26 01:32:24,417 | Address Debugger | DEBUG | **********
+2023-09-26 01:32:28,021 | Address Debugger | DEBUG | Good bye!
