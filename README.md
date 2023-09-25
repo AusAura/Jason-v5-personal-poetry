@@ -1,3 +1,5 @@
+Docker: docker run -it amarakheo/jason-bot
+
 # Jason-personal-assistant-bot
 Планувати криваву помсту ще ніколи не було так зручно.
 
