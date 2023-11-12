@@ -1,346 +1,322 @@
-Docker: docker run -it amarakheo/jason-bot
+Run Jason with the Docker image: docker run -it amarakheo/jason-bot
 
 # Jason-personal-assistant-bot
-Планувати криваву помсту ще ніколи не було так зручно.
+Planning a bloody revenge has never been so convenient.
+
+(Personal version of the application: https://github.com/AusAura/Jason-personal-assistant-bot-team-version-)
+
+### Warning: both README and application concept contain humor content
+
+# What are the differences in this personal version?
+
+- Notebook is also updated with currying and command parser.
+- Jason could be run with Docker image now inside of the container.
+- For training purposes, SOLID principles were applied.
+- Project is using Poetry now.
+- Added logging into the file.
 
 ## Address Book:
-Підпрограма зберігає записи про твоїх майбутніх жертв: їх імена, номери, імейл та фізичну адресу. А також День народження, якщо ти бажаєш особливого привітання.
-Має наступні команди-фукнції:
+The program stores records of your future victims: their names, numbers, email, and physical address. Also, their birthdays if you want a special greeting.
 
+**It has the following command-functions:**
 
-№1) Программа  корректно зберігає записи у save.json та зчитує їх при запуску.
+**№1) The program correctly saves records in save.json and reads them on startup.**
 
+**№2) add <_name> <_phone_number> <_email> <_adress>**
+Allows adding a new entry to the address book.
 
-№2) add <_name> <_phone_number> <_email> <_adress>
-Дозволяє додавати новий запис до адресної книги.
-
-<_name> = str, 1 слово
-<_phone_number> = Must contain 10-13 symbols and must match the one of the current '
-'formats: +380001112233 or 80001112233 or 0001112233
-<_email> = Must contain min 2 characters before "@" and 2-3 symbols in TLD! '
-'Example: aa@example.net or aa@example.com.ua
+<_name> = str, 1 word
+<_phone_number> = Must contain 10-13 symbols and must match one of the current formats: +380001112233 or 80001112233 or 0001112233
+<_email> = Must contain min 2 characters before "@" and 2-3 symbols in TLD! Example: aa@example.net or aa@example.com.ua
 <_adress> = str
 
-1) Не працює без будь-яких параметрів
-2) Не працює, якщо параметри перевищують кількість заданих у шаблоні
-3) Обов'язковим є тільки <_name> і <_phone_number>
-4) Якщо одного або більше із додаткових параметрів не вистачає, все одно створюває запис з пустими значеннями для цих параметрів.
-5) Телефон невірного формату викликає помилку.
-6) Імейл невірного формату викликає помилку.
-7) Якщо запис з введеним таким ім'ям вже існує - перезапис вже існуючого новим є нормальною поведінкою.
+    Doesn't work without any parameters.
+    Doesn't work if parameters exceed the specified template.
+    Only <_name> and <_phone_number> are mandatory.
+    If one or more additional parameters are missing, it still creates a record with empty values for those parameters.
+    Phone in the wrong format causes an error.
+    Email in the wrong format causes an error.
+    If a record with the entered name already exists, overwriting it with a new one is considered correct behavior.
 
+**№3) add phone <_name> <_phone_number>**
+Allows adding a new phone to the created entry.
 
-№3) add phone <_name> <_phone_number>
-Дозволяє додавати новий телефон до створеного запису.
+<_name> = str, 1 word
+<_phone_number> = Must contain 10-13 symbols and must match one of the current formats: +380001112233 or 80001112233 or 0001112233
 
-<_name> = str, 1 слово
-<_phone_number> = Must contain 10-13 symbols and must match the one of the current '
-'formats: +380001112233 or 80001112233 or 0001112233 
+    Doesn't work without any parameters.
+    Doesn't work if parameters exceed the specified template.
+    <_name> and <_phone_number> are mandatory.
+    If one of the additional parameters is missing, it gives the corresponding error.
+    Phone in the wrong format causes an error.
+    If a record with the entered name does not exist, it gives an error.
+    If the added phone already exists in the entry, it gives an error.
 
-1) Не працює без будь-яких параметрів
-2) Не працює, якщо параметри перевищують кількість заданих у шаблоні
-3) Обов'язковими є <_name> і <_phone_number>
-4) Якщо одного із додаткових параметрів не вистачає, видає відповідну помилку.
-5) Телефон невірного формату викликає помилку.
-6) Якщо запис з введеним таким ім'ям не існує - видає помилку.
-7) Якщо доданий телефон вже існує у записі - видає помилку.
+**№4) edit phone <_name> <_phone_number>**
+Allows editing the phone in the created entry.
 
+<_name> = str, 1 word
+<_phone_number> = Must contain 10-13 symbols and must match one of the current formats: +380001112233 or 80001112233 or 0001112233
 
-№4) edit phone <_name> <_phone_number>
-Дозволяє редагувати телефон у створеному записі.
+    Doesn't work without any parameters.
+    Doesn't work if parameters exceed the specified template.
+    <_name> and <_phone_number> are mandatory.
+    If one of the additional parameters is missing, it gives the corresponding error.
+    If the record with the entered name does not exist, it gives an error.
+    If the entered phone does not exist in the entry, it gives an error.
+    If it exists, it asks which phone to replace it with.
+    The new phone in the wrong format causes an error.
+    If the new phone matches the old one in the entry, it still makes the change.
 
-<_name> = str, 1 слово
-<_phone_number> = Must contain 10-13 symbols and must match the one of the current '
-'formats: +380001112233 or 80001112233 or 0001112233 
+**№5) show all**
+Displays all existing entries in the book with all the information about them.
 
-1) Не працює без будь-яких параметрів
-2) Не працює, якщо параметри перевищують кількість заданих у шаблоні
-3) Обов'язковими є <_name> і <_phone_number>
-4) Якщо одного із додаткових параметрів не вистачає, видає відповідну помилку.
-5) Якщо запис з введеним ім'ям не існує - видає помилку.
-6) Якщо введеного телефону не існує у записі - видає помилку.
-7) Якщо існує - запитує яким телефоном замінити.
-8) Новий телефон невірного формату викликає помилку.
-8) Якщо новий телефон співпадає зі старим у записі - все одно зміняє.
+    Doesn't work if it has any parameters.
+    If there are parameters, it gives the corresponding error.
+    Displays all existing records and all available information about them.
+    If some field is empty, it displays emptiness.
+    If the book is empty, it displays the appropriate message.
 
+**№6) show some**
+Displays all existing entries in the book with all the information about them, but step by step in the specified quantity.
+(Generator, for decreasing potential load on the server and execution time from showing all existing entries)
 
-№5) show all
-Виводить всі існуючі у книзі записи зі всією інформацією у них.
+    Doesn't work if it has any parameters.
+    If there are parameters, it gives the corresponding error.
+    Asks how many entries to display in 1 iteration.
+    If the quantity < 0, it displays an error.
+    If the entered value != int, it displays an error.
+    If the entered quantity exceeds the total number of entries in the book, it displays the appropriate message and shows all entries available.
+    Displays all existing records and all available information about them.
+    If there are still unprinted entries in the address book, it asks whether to display them.
+    If 'y' is entered (the command is not case-sensitive), it shows the next batch of entries.
+    If 'n' is entered, the function terminates and returns to the address book subprogram menu.
+    If some field is empty, it displays emptiness.
+    If the book is empty, it displays the appropriate message.
 
-1) Не працює, якщо має будь-які параметри.
-2) Якщо є параметри, видає відповідну помилку.
-3) Виводить всі існуючі записи та всю наявну інформацію щодо них.
-4) Якщо деяке поле пусте - виводить пустоту.
-5) Якщо книга пуста - виводить відповідне повідомлення.
+**№7) delete phone <_name> <_phone_number>**
+Deletes the specified phone from the created entry.
 
+<_name> = str, 1 word
+<_phone_number> = Must contain 10-13 symbols and must match one of the current formats: +380001112233 or 80001112233 or 0001112233
 
-№6) show some
-Виводить всі існуючі у книзі записи зі всією інформацією у них, але покроково у заданій кількості.
+    Doesn't work without any parameters.
+    Doesn't work if parameters exceed the specified template.
+    <_name> and <_phone_number> are mandatory.
+    If one of the additional parameters is missing, it gives the corresponding error.
+    If the record with the entered name does not exist, it gives an error.
+    If the entered phone does not exist in the entry, it gives an error.
+    Phone in the wrong format causes an error.
+    If the phone matches the one found in the entry, it deletes it.
 
-1) Не працює, якщо має будь-які параметри.
-2) Якщо є параметри, видає відповідну помилку.
-3) Запитує, скільки записів виводити за 1 ітерацію.
-4) Якщо кількість < 0, виводить помилку.
-5) Якщо введене значення != int, виводить помилку.
-6) Якщо введена кількість перевищує загальну кількість записів у книзі - виводить відповідне повідомлення та показує записи всі, що є.
-7) Виводить всі існуючі записи та всю наявну інформацію щодо них.
-8) Якщо у адресній книзі ще залишаються не виведені записи - запитує чи виводити іх.
-9) Якщо введено 'y' (команда не є регістрозалежною), то показує наступну порцію записів.
-10) Якщо введено 'n', функція завершує виконання та повертається до меню підпрограми.
-11) Якщо деяке поле пусте - виводить пустоту.
-12) Якщо книга пуста - виводить відповідне повідомлення.
+**№8) delete contact <_name>**
+Deletes the specified entry completely.
 
+    Doesn't work without any parameters.
+    Doesn't work if parameters exceed the specified template.
+    <_name> is mandatory.
+    If one of the additional parameters is missing, it gives the corresponding error.
+    If the record with the entered name does not exist, it gives an error.
+    If the name matches the one found in the record, it deletes the record from the address book object.
 
-№7) delete phone <_name> <_phone_number>
-Видаляє вказаний телефон із створеного запису.
+#9) set bday <_name>
+Allows adding a birthday to an existing entry.
 
-<_name> = str, 1 слово
-<_phone_number> = Must contain 10-13 symbols and must match the one of the current '
-'formats: +380001112233 or 80001112233 or 0001112233
+<_name> = str, 1 word
 
-1) Не працює без будь-яких параметрів
-2) Не працює, якщо параметри перевищують кількість заданих у шаблоні
-3) Обов'язковими є <_name> і <_phone_number>
-4) Якщо одного із додаткових параметрів не вистачає, видає відповідну помилку.
-5) Якщо запис з введеним ім'ям не існує - видає помилку.
-6) Якщо введеного телефону не існує у записі - видає помилку.
-7) Телефон невірного формату викликає помилку.
-8) Якщо телефон співпадає зі знайденим у записі - видаляє.
+    Doesn't work without any parameters.
+    Doesn't work if parameters exceed the specified template.
+    <_name> is mandatory.
+    If one of the additional parameters is missing, it gives the corresponding error.
+    If the record with the entered name does not exist, it gives an error.
+    If it exists, it asks to enter the birthday following the template (10 January 2020).
+    A template in the wrong format should cause an error.
+    A correctly entered template should add a birthday entry to the Record and display a success message.
+    If a birthday entry already exists, it overwrites it.
 
+**#10) set email <_name>**
+Allows adding an email address to an existing entry.
 
-№8) delete contact <_name>
-Видаляє вказаний запис повністю.
+    Doesn't work without any parameters.
+    Doesn't work if parameters exceed the specified template.
+    <_name> is mandatory.
+    If one of the additional parameters is missing, it gives the corresponding error.
+    If the record with the entered name does not exist, it gives an error.
+    If it exists, it asks to enter the email following the template (myemail@google.com).
+    A template in the wrong format should cause an error:
+    Must contain min 2 characters before "@" and 2-3 symbols in TLD!
+    A correctly entered template should add an email entry to the Record and display a success message.
+    If an email entry already exists, it overwrites it.
 
-1) Не працює без будь-яких параметрів
-2) Не працює, якщо параметри перевищують кількість заданих у шаблоні
-3) Обов'язковими є <_name>.
-4) Якщо одного із додаткових параметрів не вистачає, видає відповідну помилку.
-5) Якщо запис з введеним ім'ям не існує - видає помилку.
-6) Якщо назва співпадає зі знайденим записом - видаляє запис із об'єкту адресної книги.
+**#11) set address <_name>**
+Allows adding a physical address to an existing entry.
 
+<_name> = str, 1 word
 
-№9) set bday <_name>
-Дозволяє додавати день народження до існуючого запису.
+    Doesn't work without any parameters.
+    Doesn't work if parameters exceed the specified template.
+    <_name> is mandatory.
+    If one of the additional parameters is missing, it gives the corresponding error.
+    If the record with the entered name does not exist, it gives an error.
+    If it exists, it asks to enter the address (no template).
+    Should add an address entry to the Record and display a success message.
+    If an address entry already exists, it overwrites it.
 
-<_name> = str, 1 слово
+**#12) show bday <_name>**
+Displays the birthday date and the number of days until it for the specified entry.
 
-1) Не працює без будь-яких параметрів
-2) Не працює, якщо параметри перевищують кількість заданих у шаблоні
-3) Обов'язковими є <_name>.
-4) Якщо одного із додаткових параметрів не вистачає, видає відповідну помилку.
-5) Якщо запис з введеним таким ім'ям не існує - видає помилку.
-6) Якщо існує - просить ввести дату дня народження по шаблону (10 January 2020).
-7) Шаблон невірного формату повинен викликати помилку.
-8) Вірно введений шаблон повинен додати відновідний запис у Record та видавати повідомлення про успіх.
-9) Якщо запис про день народження вже існує - перезаписує.
+<_name> = str, 1 word
 
+    Doesn't work without any parameters.
+    Doesn't work if parameters exceed the specified template.
+    <_name> is mandatory.
+    If the record with the entered name does not exist, it gives an error.
+    If it exists, it displays the birthday date from the entry and the correct number of days until it.
+    If the date is not set, it displays the appropriate message.
 
-№10) set email <_name>
-Дозволяє додавати імейл-адресу до існуючого запису.
+**#13) show email <_name>**
+Displays the email for the specified entry.
 
-1) Не працює без будь-яких параметрів
-2) Не працює, якщо параметри перевищують кількість заданих у шаблоні
-3) Обов'язковими є <_name>.
-4) Якщо одного із додаткових параметрів не вистачає, видає відповідну помилку.
-5) Якщо запис з введеним таким ім'ям не існує - видає помилку.
-6) Якщо існує - просить ввести імейл по шаблону (myemail@google.com).
-7) Шаблон невірного формату повинен викликати помилку:
-Must contain min 2 characters before "@" and 2-3 symbols in TLD!
+<_name> = str, 1 word
 
-8) Вірно введений шаблон повинен додати відновідний запис у Record та видавати повідомлення про успіх.
-9) Якщо запис про імейл вже існує - перезаписує.
+    Doesn't work without any parameters.
+    Doesn't work if parameters exceed the specified template.
+    <_name> is mandatory.
+    If the record with the entered name does not exist, it gives an error.
+    If it exists, it displays the correct email for it.
+    If the email is not set, it displays the appropriate message.
 
+**#14) show address <_name>**
+Displays the physical address for the specified entry.
 
-№11) set address <_name>
-Дозволяє додавати фізичну адресу до існуючого запису.
+<_name> = str, 1 word
 
-<_name> = str, 1 слово
+    Doesn't work without any parameters.
+    Doesn't work if parameters exceed the specified template.
+    <_name> is mandatory.
+    If the record with the entered name does not exist, it gives an error.
+    If it exists, it displays the correct address for it.
+    If the address is not set, it displays the appropriate message.
 
-1) Не працює без будь-яких параметрів
-2) Не працює, якщо параметри перевищують кількість заданих у шаблоні
-3) Обов'язковими є <_name>.
-4) Якщо одного із додаткових параметрів не вистачає, видає відповідну помилку.
-5) Якщо запис з введеним таким ім'ям не існує - видає помилку.
-6) Якщо існує - просить ввести адресу (немає шаблону).
-8) Повинен додати відновідний запис у Record та видавати повідомлення про успіх.
-9) Якщо запис про адресу вже існує - перезаписує.
+**#15) find <_something>**
+Fast search for the specified string in names, phone numbers, emails, and physical addresses. Displays a full list of matches.
 
+<_something> = str, 1 word
 
-№12) show bday <_name>
-Виводить дату дня народження та кількість днів до нього для заданого запису.
+    Doesn't work without any parameters.
+    Doesn't work if parameters exceed the specified template.
+    <_something> is mandatory.
+    If <_something> is not found in names, phone numbers, addresses, or emails of all existing entries, it gives an error.
+    If found, it displays entries that have <_something>.
 
-<_name> = str, 1 слово
+**#16) help**
+Displays all available commands.
 
-1) Не працює без будь-яких параметрів
-2) Не працює, якщо параметри перевищують кількість заданих у шаблоні
-3) Обов'язковими є <_name>.
-4) Якщо запис з введеним ім'ям не існує - видає помилку.
-5) Якщо є - виводить дату дня народження із запису та вірну кількість днів до нього.
-6) Якщо дата не встановлена - виводить відповідне повідомлення.
+    Doesn't work if it has any parameters.
+    If there are parameters, it gives the corresponding error.
+    Displays all existing commands.
 
-
-№13) show email <_name>
-Виводить імейл для заданого запису.
-
-<_name> = str, 1 слово
-
-1) Не працює без будь-яких параметрів
-2) Не працює, якщо параметри перевищують кількість заданих у шаблоні
-3) Обов'язковими є <_name>.
-4) Якщо запис з введеним ім'ям не існує - видає помилку.
-5) Якщо є - виводить вірний імейл для нього.
-6) Якщо імейл не встановлений - виводить відповідне повідомлення.
-
-
-№14) show address <_name>
-Виводить фізичну адресу для заданого запису.
-
-<_name> = str, 1 слово
-
-1) Не працює без будь-яких параметрів
-2) Не працює, якщо параметри перевищують кількість заданих у шаблоні
-3) Обов'язковими є <_name>.
-4) Якщо запис з введеним ім'ям не існує - видає помилку.
-5) Якщо є - виводить вірну адресу для нього.
-6) Якщо адресу не встановлена - виводить відповідне повідомлення.
-
-
-№15) find <_something>
-Шукає вказану строку у імені, номерах, імейлі та фізичній адресі. Виводить повний список співпадінь.
-
-<_something> = str, 1 слово
-
-1) Не працює без будь-яких параметрів
-2) Не працює, якщо параметри перевищують кількість заданих у шаблоні
-3) Обов'язковими є <_something>.
-4) Якщо у всіх існуючих записах <_something> не знайдено у ім'ї, телефонах, адресі, імейлі - видає помилку.
-5) Якщо є - виводить записи, що мають <_something>.
-
-
-№16) help
-Виводить всі існуючі команди.
-
-1) Не працює, якщо має будь-які параметри.
-2) Якщо є параметри, видає відповідну помилку.
-3) Виводить всі існуючі команди.
-
-
-№17) bday in <_days>
-Виводить всі існуючі у книзі записи, в яких дні народження будуть через задану кількість днів.
+**#17) bday in <_days>**
+Displays all existing entries in which birthdays will occur in the specified number of days.
 
 <_days> = int > 0
 
-1) Не працює без параметрів.
-1) Не працює, якщо має додаткові параметри.
-2) Обов'язковим є <_days>.
-3) Якщо <_days> не є числом, видає помилку.
-4) Якщо <_days> <= 0, виводить помилку. 
-5) Виводить всі існуючі записи із іменем, датою та кількістю днів до дня народження, якщо вони є раніше або дорівнюють <_days>.
-6) Якщо таких немає - виводить відповідне повідомлення.
+    Doesn't work without parameters.
+    Doesn't work if it has additional parameters.
+    <_days> is mandatory.
+    If <_days> is not a number, it gives an error.
+    If <_days> <= 0, it gives an error.
+    Displays all existing entries with names, dates, and the number of days until the birthday if they are earlier than or equal to <_days>.
+    If there are none, it displays the appropriate message.
 
+**#18) good bye**
+Terminates the program, saving changes.
 
-№18) good bye
-Завершує роботу, зберігаючи зміни.
+    Doesn't work if it has any parameters.
+    If there are parameters, it gives the corresponding error.
+    Ends the operation of the address book, returning to the main program.
+    All entries will be correctly saved to the file save.json.
 
-1) Не працює, якщо має будь-які параметри.
-2) Якщо є параметри,видає відповідну помилку.
-3) Завершує роботу адресної книги, повертаючись до мейн-програми.
-4) Всі записи будуть корректно збережені до файлу save.json.
+**#19) close**
+Terminates the program, saving changes.
 
+    Doesn't work if it has any parameters.
+    If there are parameters, it gives the corresponding error.
+    Ends the operation of the address book, returning to the main program.
+    All entries will be correctly saved to the file save.json.
 
-№19) close
-Завершує роботу, зберігаючи зміни.
+**#20) hello**
+Displays a greeting because even bloody revenge does not interfere with politeness.
 
-1) Не працює, якщо має будь-які параметри.
-2) Якщо є параметри, видає відповідну помилку.
-3) Завершує роботу адресної книги, повертаючись до мейн-програми.
-4) Всі записи будуть корректно збережені до файлу save.json.
+    Doesn't work if it has any parameters.
+    If there are parameters, it gives the corresponding error.
+    Displays a greeting.
 
+**#21) not save**
+Terminates the program WITHOUT SAVING CHANGES.
 
-№20) hello
-Виводить привітання. Бо навіть кривава помста не є завадою ввічливості.
-
-1) Не працює, якщо має будь-які параметри.
-2) Якщо є параметри, видає відповідну помилку.
-3) Видає привітання.
-
-
-№21) not save
-Завершує роботу, БЕЗ ЗБЕРЕЖЕННЯ ЗМІН.
-
-1) Не працює, якщо має будь-які параметри.
-2) Якщо є параметри, видає відповідну помилку.
-3) Завершує роботу адресної книги, повертаючись до мейн-програми.
-4) Всі зміни НЕ БУДУТЬ збережені до файлу save.json.
+    Doesn't work if it has any parameters.
+    If there are parameters, it gives the corresponding error.
+    Ends the operation of the address book, returning to the main program.
+    All changes will NOT be saved to the file save.json.
 
 
 ## Notebook: 
-Ця програма дозволяє створювати, редагувати, видаляти та переглядати нотатки. Кожна нотатка
-має назву, вміст та список тегів. Крім того, можна додавати теги до існуючих нотаток, та змінювати їх вміст.
+This program allows you to create, edit, delete, and view notes. Each note has a title, content, and a list of tags. Additionally, you can add tags to existing notes and modify their content.
 
-Використання:
-    Для використання блокноту запустіть jason в командній строці, та оберіть в меню потрібну команду (2), яка надає командний інтерфейс для взаємодії з вашими нотатками. Ви можете додавати, редагувати, видаляти, додавати теги, шукати, перелічувати, зберігати та завантажувати нотатки, використовуючи підтримані команди.
+**Supported commands:**
 
-Підтримувані команди:
+**№1) add (Add a note) -**
+The add_note() function allows users to create new notes. The user enters the note's title (minimum 5 characters), content (minimum 10 characters), and tags separated by commas or spaces (1 to 20 characters each).
 
-№1) add (Додати нотатку)    -
-    Функція add_note() дозволяє користувачам створювати нові нотатки. Користувач вводить назву нотатки (мінімум 5 символів), вміст нотатки (мінімум 10 символів) та теги, розділені комою або пробілом (від 1 до 20 символів).
-    
-    1) Не працює без будь-яких параметрів
-    2) Не працює, якщо введені дані не відповідають умовам, таким як довжина назви, вмісту або тег.
-    3) Обов'язковим є тільки Title і Content.
+    Does not work without any parameters.
+    Does not work if the entered data does not meet the conditions, such as the length of the title, content, or tag.
+    Only Title and Content are mandatory.
 
-№2) edit (Редагувати нотатку)    -
-    Функція edit_note() дозволяє користувачам редагувати існуючі нотатки. Користувач вводить назву нотатки, яку він хоче редагувати, а потім вводить новий вміст нотатки.
-    
-    1) Не працює, якщо нотатки з введеною назвою не існує.
-    2) Не працює, якщо введені дані не відповідаю умовам на довжину вмісту.
+**№2) edit (Edit a note) -**
+The edit_note() function allows users to edit existing notes. The user enters the title of the note they want to edit and then enters the new content of the note.
 
-№3) delete (Видалити нотатку)    -
-    Функція delete_note() дозволяє користувачам видаляти нотатки. Користувач вводить назву нотатки, яку він хоче видалити.
-    
-    1) Не працює, якщо нотатки з введеною назвою не існує.
+    Does not work if the note with the entered title does not exist.
+    Does not work if the entered data does not meet the conditions for the length of the content.
 
-№4) tag (Додати тег до нотатки)    -
-    Функція add_tag_to_note() дозволяє користувачам додавати теги до існуючих нотаток. Користувач вводить назву нотатки, до якої він хоче додати тег, а потім вводить нові теги, розділені комою або пробілом.
-    
-    1) Не працює, якщо нотатки з введеною назвою не існує.
-    2) Не працює, якщо додати теги, які вже існують для цієї нотатки.
-    3) Не працює, якщо введені дані не відповідаю умовам на довжину тег.
+**№3) delete (Delete a note) -**
+The delete_note() function allows users to delete notes. The user enters the title of the note they want to delete.
 
-№5) sort (Сортування нотаток)    -
-    Функція sort_notes() дозволяє користувачам сортувати нотатки за наявністю ключових слів у тегах, заголовку або вмісті.
+    Does not work if the note with the entered title does not exist.
 
+**№4) tag (Add a tag to a note) -**
+The add_tag_to_note() function allows users to add tags to existing notes. The user enters the title of the note to which they want to add a tag and then enters new tags separated by commas or spaces.
 
-№6) list (Вивести список нотаток)    -
-    Функція display_notes() виводить усі наявні нотатки.
+    Does not work if the note with the entered title does not exist.
+    Does not work if trying to add tags that already exist for this note.
+    Does not work if the entered data does not meet the conditions for the length of the tag.
 
-№7) search (Пошук нотаток)    -
-    Функція search_notes() дозволяє користувачам шукати нотатки за наявністю ключових слів у заголовку, вмісті або тегах.
+**№5) sort (Sort notes) -**
+The sort_notes() function allows users to sort notes based on keywords in tags, titles, or content.
 
-№8) load (Завантаження нотаток)    -
-    Функція load_notes() дозволяє користувачам завантажувати нотатки з файлу. Користувач вводить ім'я файлу для завантаження нотаток. Файл повинен бути у форматі JSON.
-    
-    1) Не працює, якщо файл з нотатками ( .json) не існує або має неправильний формат.
+**№6) list (List notes) -**
+The display_notes() function displays all available notes.
 
-№9) save (Збереження нотаток)    -
-    Функція save_notes() зберігає всі нотатки в файл у форматі JSON.
+**№7) search (Search notes) -**
+The search_notes() function allows users to search for notes based on keywords in titles, content, or tags.
 
-№10) exit (Вихід)    -
-    Завершує виконання програми, зберігаючи нотатки у файл.
+**№8) load (Load notes) -**
+The load_notes() function allows users to load notes from a file. The user enters the file name to load notes from. The file must be in JSON format.
 
+    Does not work if the file with notes (.json) does not exist or has an incorrect format.
+
+**№9) save (Save notes) -**
+The save_notes() function saves all notes to a file in JSON format.
+
+**№10) exit (Exit) -**
+Exits the program, saving notes to a file.
 
 
 ## File sorter:
-Підпрограма являється вашою власною покоївкою із чорним поясом по сортуванню та прибиранню.
+The subroutine serves as your personal black belt in sorting and cleaning.
 
-Звісно, у вас є папка у яку постійно скидається мотлох у вигляді старих фотографій усунених цілей, старих відео допитів,
-колись популярних російських пісень, секретних старих архівів із документами та всяких інших файлів. У такому разі на
-сцену виходить ваша кишенькова покоївка. 
+Certainly, you have a folder where clutter constantly accumulates in the form of old photos of eliminated targets, videos of past interrogations, once-popular songs, secret old archives with documents, and various other files. In this case, your pocket cleaner comes into play.
 
-Все що потрібно - це просто вказати шлях до папки з усім мотлохом і дана програма відсортує усі файли та перемістить їх
-у нову папку, всередині якої будуть знаходитись папки із відповідними назвами які міститимуть відповідні до формату 
-відсортовані файли, архіви ж будуть розпаковані та знаходитимуться у папках із назвами відповідними до назв архівів. 
+All you need to do is simply **specify the path to the folder with all the clutter**, and this program will sort all the files and move them to a new folder. Inside this new folder, there will be subfolders with appropriate names containing files sorted according to the format. Archives will be unpacked and placed in folders with names corresponding to the names of the archives.
 
-Також у процесі сортування усі назви файлів, які були написані кириличними символами будуть замінені на латинські 
-символи зі збереженням назв.
+During the sorting process, **all file names written in Cyrillic characters will be replaced with Latin characters while preserving the names.**
